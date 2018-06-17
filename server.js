@@ -23,7 +23,7 @@ app.post('/api/fileanalyse', upload.single('upfile'), function(req, res, next) {
   res.send({
     name: req.file.originalname,
     type: req.file.mimetype,
-    syze: req.file.size
+    size: req.file.size
   });
 });
 
